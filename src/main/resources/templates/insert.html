@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>新增图书信息</title>
+</head>
+<body>
+<table border="1">
+    <form method="post" th:action="@{/insertIng}">
+
+        <tr style="background-color: aquamarine">
+            <td colspan="2" style="text-align: center">新增电子图书</td>
+        </tr>
+        <tr>
+            <td> 图书名称</td>
+            <td ><input type="text"name="title"></td>
+        </tr>
+        <tr>
+            <td>图书摘要</td>
+            <td><input type="text" name="summary"> </td>
+        </tr>
+        <tr>
+            <td>上传人</td>
+            <td ><input th:type="text"name="uploadUser"></td>
+        </tr>
+        <tr>
+            <td> 上传时间(*)</td>
+            <td><input th:type="text" name="createTime">(yyyy-MM-dd)</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="submit" value="提交"></td>
+        </tr>
+
+    </form>
+</table>
+</body>
+</html>

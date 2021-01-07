@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxw.mapper.EbookEntryMapper">
+    <select id="findById" resultType="com.lxw.entity.EbookEntry">
+        select * from ebook_entry ${ew.customSqlSegment}
+    </select>
+</mapper>
